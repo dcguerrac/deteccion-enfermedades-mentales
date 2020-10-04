@@ -8,7 +8,7 @@
                var url=ruta+"/Vista/Seguridad/loginAcceso/Login.jsp";	 
                var opciones="toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=1500,height=2000";
                window.open(url,opciones);
-              // this.close();
+              this.close();
             }             
             
         </script>

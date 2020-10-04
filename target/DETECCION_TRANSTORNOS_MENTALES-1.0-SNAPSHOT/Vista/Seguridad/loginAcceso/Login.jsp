@@ -2,7 +2,7 @@
     <head>
         <link href="<%=request.getContextPath()%>/css/Master.css" rel="stylesheet" type="text/css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Acceso al Sistema  XYZW</title>
+        <title>Bienvenido al Sistema </title>
         <script src="<%=request.getContextPath()%>/js/javascript.js" type="text/javascript"></script>
     </head>
     
