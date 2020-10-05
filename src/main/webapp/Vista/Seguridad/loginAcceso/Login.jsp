@@ -8,7 +8,6 @@
     
     <body    onload="iniciar('<%=request.getContextPath()%>');cargarBotones(2)" >
         <center>
-         
                 <form   name="form">
                    
                 <input type="hidden" name="op">       
@@ -16,7 +15,7 @@
                
                 <table id="cuadro" align="center" >
                     <tr >
-                        <td colspan="2" ><div align="center"><img src="<%=request.getContextPath()%>/imagenes/user.png" width="100" height="100" ></div></td>
+                        <td colspan="2" ><div align="center"><img src="<%=request.getContextPath()%>/imagenes/user.jpg" width="100" height="100" ></div></td>
                     </tr>
                 
                     <tr>
@@ -37,9 +36,9 @@
                     </tr>
                     
                     <tr>
-                        <td > <a href="javascript:enviar('<%=request.getContextPath()%>')"> <img src="<%=request.getContextPath()%>/imagenes/ingresar.png" width="120" height="35" onMouseOver="CambiaImg('bot4','bot4p')" onmouseout="CambiaImg('bot4','bot4')" name="bot4"></a>
+                        <td align="center" > <a href="javascript:enviar('<%=request.getContextPath()%>')"> <img src="<%=request.getContextPath()%>/imagenes/ingresar.png" width="110" height="35" onMouseOver="CambiaImg('bot4','bot4p')" onmouseout="CambiaImg('bot4','bot4')" name="bot4"></a>
                         </td>
-                        <td > <a href="javascript:cerrar()"><img src="<%=request.getContextPath()%>/imagenes/registrar.png" width="120" height="35" onMouseOver="CambiaImg('bot5','bot5p')" onmouseout="CambiaImg('bot5','bot5')" name="bot5"></a>
+                        <td align="center" > <a href="Registro.jsp('<%=request.getContextPath()%>')"><img src="<%=request.getContextPath()%>/imagenes/registrar.png" width="110" height="35" value="Ir" name="bot5"></a>
                         </td>
                     </tr>       
                     

@@ -3,19 +3,38 @@
     padding: 0px;
 }          
 body{
-    background : url(../imagenes/nota-salud-mental.jpg);
+    background : url(../imagenes/fondo.gif);
+    background-size: 100%;
+   
+}
+#xdd{
+    background : url(../imagenes/fondo2.gif);
+    background-size: 130%;
    
 }
 #cuadro{
     width: 350px;
     height: 450px;
-    background-color: #141414  ;
+    background-color: #141414  ; 
     margin: auto;
     margin-top: 120px;
     padding: 5px 5px 30px 5px;
     border-top: 35px solid #141414;
     border-right: 35px solid #141414;
     border-left: 35px solid #141414;
+    opacity: 0.9;
+}
+#cuadroR{
+    width: 500px;
+    height: 600px;
+    background-color: white  ; 
+    margin: auto;
+    margin-top: 120px;
+    padding: 5px 5px 30px 5px;
+    border-top: 35px solid white;
+    border-right: 35px solid white;
+    border-left: 35px solid white;
+    opacity: 0.9;
 }
 
 #encabezado
@@ -407,6 +426,16 @@ TH {
 	text-transform: capitalize;
 
 }
+.tituloRegistro {
+	font-family: Tahoma;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: black;
+	text-transform: capitalize;
+
+}
 .boton {
 	font-size: 10px;
 	font-family: Tahoma;
@@ -415,11 +444,6 @@ TH {
 	font-weight: bold;
 	font-variant: normal;
 	color: #000066;
-
-
-
-
-
 }
 .tituloTabla {
 
@@ -438,6 +462,13 @@ TH {
 	font-size: 14px;
 	font-weight: bold;
 	color: white;
+	text-align: center;
+}
+.tituloRegistro2 {        
+	font-family: Tahoma;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
 	text-align: center;
 }
 .FondoFormulario {

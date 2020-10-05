@@ -10,7 +10,7 @@
 
         }
             
-        function enviar(  ruta   )
+     function enviar(  ruta   )
         {
             var usu=document.form.txtUsuario.value;
             var clave=document.form.txtClave.value;
@@ -33,10 +33,7 @@
 
 
 
-    function cerrar(){
-        window.close();
-    }
-
+ 
     function cargar(){
       document.form.txtUsuario.focus();
     }    
