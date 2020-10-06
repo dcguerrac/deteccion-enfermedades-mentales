@@ -4,13 +4,13 @@
                background-color: black;                
             }
             #logo
-            {  background-color: #B6B4B4;
+            {  background-color: #FFFFFF;
                width: 20%;
                height: 150px;
                float: left;
             }
             #banner
-            { background-color: #9B9695;
+            { background-color: #FFFFFF;
               width: 80%;
               height: 150px;
               float: left;                
@@ -412,7 +412,7 @@ TH {
 
 }
 .tituloFormulario2 {
-	font-family: Tahoma;
+	font-family: Arial;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000066;
