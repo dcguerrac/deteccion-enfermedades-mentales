@@ -34,12 +34,12 @@
                 <table border="0" align="center">
                     <tr>
                         <td><a href="javascript:enviar('<%=request.getContextPath()%>')"> <img
-                                src="<%=request.getContextPath()%>/imagenes/ok.png" border='1' width="300" height="180"
+                                src="<%=request.getContextPath()%>/imagenes/ok.png" width="100" height="100"
                                 onMouseOver="CambiaImg('bot4','bot4p')" onmouseout="CambiaImg('bot4','bot4')"
                                 name="bot4"></a>
                         </td>
                         <td><a href="javascript:cerrar()"><img src="<%=request.getContextPath()%>/imagenes/cancelar.png"
-                                                               border='1' width="300" height="180"
+                                                               width="100" height="100"
                                                                onMouseOver="CambiaImg('bot5','bot5p')"
                                                                onmouseout="CambiaImg('bot5','bot5')" name="bot5"></a>
                         </td>

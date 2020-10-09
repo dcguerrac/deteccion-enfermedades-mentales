@@ -8,10 +8,9 @@
                 <tr>
                     <td>
                         <center>
-                            <img src="<%=request.getContextPath()%>/imagenes/cerebro.png" width="50%" height="100%"
-                                 alt="50%"/>
+                            <img src="<%=request.getContextPath()%>/imagenes/cerebro.png" width="50%" height="100%" />
                         </center>
-                    </td>    
+                    </td>
                 </tr>
 
             </table>
@@ -41,9 +40,9 @@
         <li><a href="">Inicio</a></li>
         <li><a href="#">Mantenimiento</a>
             <ul>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,1)">Empleado</a></li>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,2)">Estado Civil</a></li>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,3)">Sexo</a></li>
+                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,1)">Pregunta</a></li>
+                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,2)">Usuario</a></li>
+                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,3)">Puntaje</a></li>
                 <li><a href="#">Mas</a>
                     <ul>
                         <li><a href="">Submenu1</a></li>

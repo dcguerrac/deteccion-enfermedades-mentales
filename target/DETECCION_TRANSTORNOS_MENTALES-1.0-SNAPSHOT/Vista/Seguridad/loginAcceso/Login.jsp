@@ -43,9 +43,9 @@
         <table border="0" align="center">
             <tr>
                 <td><a href="javascript:enviar('<%=request.getContextPath()%>')"> <img
-                        src="<%=request.getContextPath()%>/imagenes/ok.png" border='1'></a>
+                        src="<%=request.getContextPath()%>/imagenes/ok.png"  width="100" height="100"></a>
                 </td>
-                <td><a href="javascript:cerrar()"><img src="<%=request.getContextPath()%>/imagenes/cancelar.png" border='1'></a>
+                <td><a href="javascript:cerrar()"><img src="<%=request.getContextPath()%>/imagenes/cancelar.png" width="100" height="100"></a>
                 </td>
             </tr>
         </table>
