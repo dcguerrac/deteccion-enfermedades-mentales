@@ -6,16 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="PROYECTOCONEXIONBDJAVAWEBELIMINAR" />
+        <module name="pregunta1jsp" />
         <module name="DETECCION_TRANSTORNOS_MENTALES" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DETECCION_TRANSTORNOS_MENTALES" target="1.7" />
+      <module name="pregunta1jsp" target="1.6" />
+      <module name="PROYECTOCONEXIONBDJAVAWEBELIMINAR" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DETECCION_TRANSTORNOS_MENTALES" options="-endorseddirs C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\target/endorsed" />
+      <module name="PROYECTOCONEXIONBDJAVAWEBELIMINAR" options="-endorseddirs C:\Users\dguerrac\Documents\unfv\web\PROYECTOCONEXIONBDJAVAWEBELIMINAR\target/endorsed" />
+      <module name="pregunta1jsp" options="-endorseddirs C:\Users\dguerrac\web\pregunta1jsp\target/endorsed" />
     </option>
   </component>
 </project>

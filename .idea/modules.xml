@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DETECCION_TRANSTORNOS_MENTALES.iml" filepath="$PROJECT_DIR$/DETECCION_TRANSTORNOS_MENTALES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PROYECTOCONEXIONBDJAVAWEBELIMINAR/PROYECTOCONEXIONBDJAVAWEBELIMINAR.iml" filepath="$PROJECT_DIR$/../PROYECTOCONEXIONBDJAVAWEBELIMINAR/PROYECTOCONEXIONBDJAVAWEBELIMINAR.iml" />
+      <module fileurl="file://$USER_HOME$/web/pregunta1jsp/pregunta1jsp.iml" filepath="$USER_HOME$/web/pregunta1jsp/pregunta1jsp.iml" />
     </modules>
   </component>
 </project>

@@ -1,3 +1,4 @@
+<%--<%@include file="FrmPrincipal.jsp" %>--%>
 <div id="encabezado">
     <div id="logo">
         <center>
@@ -8,7 +9,7 @@
                 <tr>
                     <td>
                         <center>
-                            <img src="<%=request.getContextPath()%>/imagenes/cerebro.png" width="50%" height="100%" />
+                            <img src="<%=request.getContextPath()%>/imagenes/cerebro.png" width="50%" height="80%" />
                         </center>
                     </td>
                 </tr>

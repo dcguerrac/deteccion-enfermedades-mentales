@@ -1,5 +1,9 @@
+Controlador\SexoControlador.class
+Controlador\UsuarioControlador.class
 Controlador\EstadoCivilControlador.class
 Controlador\EmpleadoControlador.class
-Controlador\SexoControlador.class
+Bean\PersonaBean.class
+Util\ConexionBD.class
 Controlador\MenuControlador.class
-Controlador\UsuarioControlador.class
+Controlador\PersonaControlador.class
+Dao\PersonaDao.class
