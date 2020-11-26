@@ -32,6 +32,7 @@ public class UsuarioControlador extends HttpServlet {
                 String nombre = request.getParameter("txtNom");
                 String correo = request.getParameter("txtCor");
                 String clave = request.getParameter("txtClave");
+                System.out.println("Nombre persona es : "+ nombre);
                 PersonaBean personaBean = new PersonaBean();
                 personaBean.setNomPer(nombre);
                 personaBean.setAppPer(apellido);

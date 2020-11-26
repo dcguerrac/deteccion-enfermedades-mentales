@@ -8,6 +8,15 @@ function menu(ruta, op, sub1) {
 
 }
 
+function crearUsuario(ruta) {
+    document.form.action = ruta + "/UsuarioControlador";
+    document.form.method = "POST";
+    document.form.op.value = "2";
+    document.form.submit();
+
+
+}
+
 function enviar(ruta) {
     var usu = document.form.txtUsuario.value;
     var clave = document.form.txtClave.value;

@@ -7,7 +7,7 @@
             window.open(url, opciones);
             this.close();
         }
-    </script>
+    </script>  
 </head>
 
 <body onload="iniciar('<%=request.getContextPath()%>')">

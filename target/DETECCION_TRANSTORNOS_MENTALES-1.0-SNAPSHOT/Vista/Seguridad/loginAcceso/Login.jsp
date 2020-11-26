@@ -6,14 +6,14 @@
     <title>Login</title>
     <script src="<%=request.getContextPath()%>/js/javascript.js" type="text/javascript"></script>
 </head>
-<body  background="<%=request.getContextPath()%>/imagenes/fondoLogin.jpg" >
+<body background="<%=request.getContextPath()%>/imagenes/FondoPrincipal.jpg">
 <center>
     <form name="form">
 
         <input type="hidden" name="op">
 
 
-        <table id="cuadro" align="center" >
+        <table id="cuadro" align="center">
             <tr>
                 <td colspan="2">
                     <div align="center"><img src="<%=request.getContextPath()%>/imagenes/user.jpg" width="100"
@@ -49,7 +49,7 @@
                         src="<%=request.getContextPath()%>/imagenes/ingresar.png" width="110" height="35"
                         onMouseOver="CambiaImg('bot4','bot4p')" onmouseout="CambiaImg('bot4','bot4')" name="bot4"></a>
                 </td>
-                <td align="center"><a href="Registo.jsp"><img
+                <td align="center"><a href="CrearUsuario.jsp"><img
                         src="<%=request.getContextPath()%>/imagenes/registrar.png" width="110" height="35" value="Ir"
                         name="bot5"></a>
                 </td>
