@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../imagenes/FondoPrincipal.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;  
+}  
+#Crear_Cuenta {
+  width: 320px;
+  height: 590px;
+  background: url(../imagenes/FondoPrincipal.jpg);
+  color: #000;
+  top: 50%;
+  left: 85%;
+  position: center;
+/*  transform: translate(-50%, -50%);*/
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+#Crear_Cuenta h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+#Crear_Cuenta label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+#Crear_Cuenta input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#Crear_Cuenta input[type="text"], #Crear_Cuenta input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+#Crear_Cuenta input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#Crear_Cuenta input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+#Crear_Cuenta a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+#Crear_Cuenta a:hover {
+  color: #000;
+}

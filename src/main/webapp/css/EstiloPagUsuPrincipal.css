@@ -1,0 +1,73 @@
+#contenido{
+    height: 600px;
+    width: 98%;
+    margin: 15px;
+}
+
+#div1{
+    background: azure;
+    height: 30%;
+    width: 97%;
+    margin: 1%;
+    border-radius: 1em;
+}
+#text1{
+    width: 66%;
+    height: 90%;    
+    float: left;
+    margin: 10px;
+}
+#img1{
+    width: 30%;
+    height: 90%;
+    float: right;
+    margin: 10px;
+}
+#div2{
+    background: #99ccff;
+    height: 30%;
+    width: 97%;
+    margin: 1%;
+    border-radius: 1em;
+}
+#text2{
+    width: 66%;
+    height: 90%;    
+    float: right;
+    margin: 10px;
+}
+#img2{
+    width: 30%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+#div3{
+    background: #9bb7e1;
+    height: 30%;
+    width: 97%;
+    margin: 1%;
+    border-radius: 1em;
+}
+#text3{
+    width: 66%;
+    height: 90%;    
+    float: left;
+    margin: 10px;
+}
+#img3{
+    width: 30%;
+    height: 90%;
+    float: right;
+    margin: 10px;
+}
+input button{
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 40px;
+  background: cornflowerblue;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
