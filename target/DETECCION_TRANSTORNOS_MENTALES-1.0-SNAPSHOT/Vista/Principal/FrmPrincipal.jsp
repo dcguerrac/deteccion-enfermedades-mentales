@@ -19,7 +19,7 @@
     <input type="hidden" name="opu">
     <input type="hidden" name="subu">
     <div id="estructura">
-        <?php include './Menu.php';      ?>
+        <%@include file="menu.jsp" %>
         <div id="contenido" >
             <div id="div1">
                 <div id="text1">
@@ -33,7 +33,7 @@
                         sentimientos en el contexto de la pandemia COVID-19.</p>
                 </div>
                 <div id="img1">
-                    <center><img src="../../../Imagenes/salud_mental_1.jpg" alt="" width="285px"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_1.jpg" alt="" width="285px"/></center>
                 </div>
             </div>
             <div id="div2">
@@ -51,7 +51,7 @@
                         nuestra salud fisica como mental.</p>
                 </div>
                 <div id="img2">
-                    <center><img src="../../../Imagenes/salud_mental_2.jpg" alt="" width="285px" height="160"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_2.jpg" alt="" width="285px" height="160"/></center>
                 </div>
             </div>
             <div id="div3">
@@ -70,7 +70,7 @@
                         genero.</p>
                 </div>
                 <div id="img3">
-                    <center><img src="../../../Imagenes/salud_mental_3.jpg" alt="" width="285px" height="160"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_3.jpg" alt="" width="285px" height="160"/></center>
                 </div>
             </div>
         </div>
@@ -92,22 +92,22 @@
             <div id="pie2">
                 <div id="men">¡Mantente Informado!</div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/facebook.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/facebook.png" alt="" width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/twitter.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/twitter.png" alt="" width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/instagram.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/instagram.png" alt="" width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/whatsapp.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/whatsapp.png" alt="" width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/youtube.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/youtube.png" alt="" width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="../../../Imagenes/RedesSociales/gmail.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/gmail.png" alt="" width="30px"/></a>
                 </div>
             </div>
         </div>

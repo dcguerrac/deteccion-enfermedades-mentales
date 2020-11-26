@@ -1,62 +1,31 @@
-<%--<%@include file="FrmPrincipal.jsp" %>--%>
 <div id="encabezado">
-    <div id="logo">
-        <center>
-            <table width="100%">
-                <tr>
-                    <td>&nbsp;&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>
-                        <center>
-                            <img src="<%=request.getContextPath()%>/imagenes/cerebro.png" width="50%" height="80%" />
-                        </center>
-                    </td>
-                </tr>
-
-            </table>
-        </center>
+    <div id="banner1">
+        <img src="<%=request.getContextPath()%>/imagenes/banner.png" alt="" width="1066px" height="110px"/>
     </div>
-    <div id='banner'>
-        <center>
-            <table>
-                <tr>
-                    <td>&nbsp;&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>
-                              <span style="font-size: large; ">
-                              <p align="center">
-                                    BIENVENIDO AL ASISTENTE VIRTUAL DE TRANSTORNOS MENTALES
-                              </p>                               
-                               </span>
-                    </td>
-                </tr>
-            </table>
-        </center>
+    <div id="banner2">
+        <div id="banner3">
+            <img src="<%=request.getContextPath()%>/imagenes/user.png" alt="" width="110px"/>
+        </div>
+        <div id="banner4">
+            <center><h2>Bienvenido</h2></center>
+            <center><h2 style="font : 18pt Arial, Helvetica, Verdana ;"><?php echo $usuario['UsuPer']   ?></h2></center>
+        </div>
     </div>
 </div>
 <div id='menu'>
     <ul class="nav">
-        <li><a href="">Inicio</a></li>
-        <li><a href="#">Mantenimiento</a>
+        <li><a href="javascript:MenuUsuario('../../../Controlador/',1)">Inicio</a></li>
+        <li><a href="#">Test</a>
             <ul>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,1)">Pregunta</a></li>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,2)">Usuario</a></li>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',1,3)">Puntaje</a></li>
-                <li><a href="#">Mas</a>
-                    <ul>
-                        <li><a href="">Submenu1</a></li>
-                    </ul>
-                </li>
+                <li><a href="javascript:MenuUsuario('../../../Controlador/',4)">Iniciar Test</a></li>
             </ul>
         </li>
-        <li><a href="#">Seguridad</a>
+        <li><a href="#">Configuracion</a>
             <ul>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',3,1)">Configuracion de Cuenta</a></li>
-                <li><a href="javascript:menu('<%=request.getContextPath()%>',3,2)">Cambiar Clave</a></li>
+                <li><a href="javascript:MenuUsuario('../../../Controlador/',6)">Cambio de Clave</a></li>
+                <li><a href="javascript:MenuUsuario('../../../Controlador/',7)">Datos Personales</a></li>
             </ul>
         </li>
-
+        <li style="float: right"><a href="javascript:CerrarSesionU()">Cerrar Sesion</a></li>
     </ul>
 </div>
