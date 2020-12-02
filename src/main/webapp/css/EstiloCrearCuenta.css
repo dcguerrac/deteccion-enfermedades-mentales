@@ -1,0 +1,119 @@
+#container{
+    width: 800px;
+    height: 620px;
+    background: #fff;
+    margin-left: 20%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 17px #333;
+    border-color: red;
+}
+/*---------------------------FORMULARIO 1-------------------------------------*/
+#Crear_Cuenta {
+  width: 320px;
+  height: 440px;
+  background: #fff;
+  color: #000;
+  top: 70%;
+  left: 35%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+#titulo{
+    background: #7abaff;
+    width: 800px;
+    height: 60px;
+}
+#titulo h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  color: red;
+}
+#cont{
+    width: 800px;
+    height: 420px;
+}
+#Crear_Cuenta label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+#Crear_Cuenta input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#Crear_Cuenta input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+
+/*---------------------------FORMULARIO 2-------------------------------------*/
+#Crear_Cuenta2 {
+  width: 320px;
+  height: 440px;
+  background: #fff;
+  color: #000;
+  top: 70%;
+  left: 65%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+#Crear_Cuenta2 label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+#Crear_Cuenta2 input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#Crear_Cuenta2 input[type="text"], #Crear_Cuenta2 input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+#fin{
+    width: 800px;
+    height: 50px;
+}
+#fin input[type="submit"] {
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 50px;
+  background: blue;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#fin input[type="submit"]:hover {
+  cursor: pointer;
+  background: deepskyblue;
+  color: #000;
+}
+#fin a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+#fin a:hover {
+  color: #000;
+}
