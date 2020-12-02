@@ -14,10 +14,10 @@ public class MenuControlador extends HttpServlet {
         String   sub1=request.getParameter("sub");
         int  op=Integer.parseInt(op1);
         int  sub=Integer.parseInt(sub1);
-        String pagina="";        
+        String pagina="";
         switch(op)
         {   case 1:
-            {  
+            {
                 switch(sub)
                 {   case 1:
                      {   pagina="/Vista/Mantenimiento/MantenimientoEmpleado/EmpleadoPrincipalMant.jsp";

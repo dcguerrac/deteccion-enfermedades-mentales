@@ -57,11 +57,11 @@ public class PersonaDao {
         try {
             System.out.println("Nombre de la nueva persona es  " + obj.getNomPer());
             cn = ConexionBD.getConexionBD();
-            String query = "insert into persona (AppPer,NomPer,CorPer,PasPer) values ('" + obj.getAppPer() + "','" + obj.getNomPer() + "','" + obj.getCodPer() + "','" + obj.getNomPer() + "');";
+            String query = "insert into persona values ('" + obj.getAppPer() + "','" + obj.getNomPer() + "','" + obj.getCodPer() + "','" + obj.getNomPer() + "');";
             System.out.println("query para insertar es " + query);
             pt = cn.prepareStatement(query);
-            pt.setString(1, obj.getNomPer());
-            pt.setString(2, obj.getAppPer());
+            pt.setString(1, "DAVID");
+            pt.setString(2,"DAVID");
             System.out.println("Se ingreso los datos 1");
             pt.setString(3, obj.getCorPer());
             pt.setString(4, obj.getPasPer());

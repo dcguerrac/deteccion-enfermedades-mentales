@@ -1,13 +1,13 @@
-<!DOCTYPE html>
 <%!
-/*    HttpServletRequest request = new HttpServletRequest() {
-    };
-    HttpSession session = request.getSession();*/
+    /*    HttpServletRequest request = new HttpServletRequest() {
+        };
+        HttpSession session = request.getSession();*/
 %>
-
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <html>
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>INICIO USUARIO</title>
     <script src="<%=request.getContextPath()%>/js/javascript.js" type="text/javascript"></script>
     <link href="<%=request.getContextPath()%>/css/EstiloMenu.css" rel="stylesheet" type="text/css"/>
@@ -20,12 +20,24 @@
     <input type="hidden" name="subu">
     <div id="estructura">
         <%@include file="menu.jsp" %>
-        <div id="contenido" >
+        <div id="contenido">
             <div id="div1">
                 <div id="text1">
-                    <p><h3>Test de Estado de Salud Mental <input style="float: right" type="submit" value="Comenzar Test" onclick="ComenzarTest()"></h3>
+                    <form name="form">
+                        <input type="hidden" name="op">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="javascript:ComenzarTest('<%=request.getContextPath()%>')">Test de Estado de
+                                        Salud Mental
+                                        <%--<input style="float: right" type="submit" value="Comenzar Test">--%></a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </form>
                     <hr>
-                    <p align = justify>En estos tiempos el miedo, la preocupacion el
+                    <p align=justify>En estos tiempos el miedo, la preocupacion el
                         miedo y el estres son respuestas normales en los que nos
                         enfrentamos a la incertidumbre, o a lo desconocido o
                         a situaciones de cambios o crisis. Asi que es normal
@@ -33,13 +45,14 @@
                         sentimientos en el contexto de la pandemia COVID-19.</p>
                 </div>
                 <div id="img1">
-                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_1.jpg" alt="" width="285px"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_1.jpg" alt="" width="285px"/>
+                    </center>
                 </div>
             </div>
             <div id="div2">
                 <div id="text2">
                     <br>
-                    <p align = justify>Al temor de contraer el virus en una pandemia como
+                    <p align=justify>Al temor de contraer el virus en una pandemia como
                         la de COVID-19, se suma el impacto de los importantes
                         cambios en nuestra vida cotidiana provocados por los
                         esfuerzos para contener y frenar la propagacion del
@@ -51,13 +64,14 @@
                         nuestra salud fisica como mental.</p>
                 </div>
                 <div id="img2">
-                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_2.jpg" alt="" width="285px" height="160"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_2.jpg" alt="" width="285px"
+                                 height="160"/></center>
                 </div>
             </div>
             <div id="div3">
                 <div id="text3">
                     <br>
-                    <p align = justify>Atender la salud mental y el bienestar psicosocial,
+                    <p align=justify>Atender la salud mental y el bienestar psicosocial,
                         en momentos de emergencia, es tan importante como
                         atender la salud fisica. La situacion actual de emergencia
                         podria desencadenar en problemas de salud mental en
@@ -70,7 +84,8 @@
                         genero.</p>
                 </div>
                 <div id="img3">
-                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_3.jpg" alt="" width="285px" height="160"/></center>
+                    <center><img src="<%=request.getContextPath()%>/imagenes/salud_mental_3.jpg" alt="" width="285px"
+                                 height="160"/></center>
                 </div>
             </div>
         </div>
@@ -92,22 +107,28 @@
             <div id="pie2">
                 <div id="men">¡Mantente Informado!</div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/facebook.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/facebook.png" alt=""
+                                     width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/twitter.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/twitter.png" alt=""
+                                     width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/instagram.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/instagram.png" alt=""
+                                     width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/whatsapp.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/whatsapp.png" alt=""
+                                     width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/youtube.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/youtube.png" alt=""
+                                     width="30px"/></a>
                 </div>
                 <div id="redes">
-                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/gmail.png" alt="" width="30px"/></a>
+                    <a href="#"><img src="<%=request.getContextPath()%>/imagenes/RedesSociales/gmail.png" alt=""
+                                     width="30px"/></a>
                 </div>
             </div>
         </div>

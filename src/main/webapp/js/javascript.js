@@ -13,8 +13,15 @@ function crearUsuario(ruta) {
     document.form.method = "POST";
     document.form.op.value = "2";
     document.form.submit();
+}
 
-
+function ComenzarTest(ruta){
+    window.document.form.action= ruta+"/PreguntaControlador";
+    window.document.form.method="GET";
+    window.document.form.op.value="1";
+    window.document.form.opu.value="1";
+    window.document.form.subu.value="4";
+    window.document.form.submit();
 }
 
 function enviar(ruta) {

@@ -1,3 +1,9 @@
+<head>
+    <%--  <link href="<%=request.getContextPath()%>/css/Master.css" rel="stylesheet" type="text/css">--%>
+    <script src="<%=request.getContextPath()%>/js/javascript.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MENU</title>
+</head>
 <div id="encabezado">
     <div id="banner1">
         <img src="<%=request.getContextPath()%>/imagenes/banner.png" alt="" width="1066px" height="110px"/>
