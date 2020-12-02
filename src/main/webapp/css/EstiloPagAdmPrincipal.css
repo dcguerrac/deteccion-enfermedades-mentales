@@ -1,0 +1,41 @@
+#contenido{
+    height: 387px;
+    width: 98%;
+    margin: 15px;
+}
+#div{
+
+    height: 370px;
+    width: 97%;
+    margin: 1%;
+    border-radius: 1em;
+}
+#titulo{
+
+    height: 50px;
+    width: 98%;
+    margin: 20px;
+}
+h1{
+    font-family:courier,arial,helvética;
+}
+#div1{
+
+    height: 277px;
+    width: 98%;
+    margin: 20px;
+}
+#text1{
+
+    width: 66%;
+    height: 90%;    
+    float: left;
+    margin: 10px;
+}
+#img1{
+
+    width: 30%;
+    height: 90%;
+    float: right;
+    margin: 10px;
+}

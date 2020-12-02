@@ -1,302 +1,607 @@
-function menu(ruta, op, sub1) {
-    document.form.action = ruta + "/MenuControlador";
-    document.form.method = "GET";
-    document.form.op.value = op;
-    document.form.sub.value = sub1;
-    document.form.submit();
 
 
-}
+/******************************ADMINISTRADOR***********************************/
 
-function crearUsuario(ruta) {
-    document.form.action = ruta + "/UsuarioControlador";
-    document.form.method = "POST";
-    document.form.op.value = "2";
-    document.form.submit();
-}
-
-function ComenzarTest(ruta){
-    window.document.form.action= ruta+"/PreguntaControlador";
-    window.document.form.method="GET";
+function entrarA(){
+    window.document.form.action="../../../Controlador/IndexControlador.java";
+    window.document.form.method="POST";
     window.document.form.op.value="1";
+    window.document.form.submit(); 
+}
+function CrearCuenta(){
+    var nombre = window.document.form.txtnombre.value;
+    var apellidop = window.document.form.txtapellidoP.value;
+    var apellidom = window.document.form.txtapellidoM.value;
+    var edad = window.document.form.txtedad.value;
+    var sexo = window.document.form.txtsexo.value;
+    var telefono = window.document.form.txttelefono.value;
+    var correo = window.document.form.txtcorreo.value;
+    var usuario = window.document.form.txtidusuario.value;
+    var con = window.document.form.txtclave.value;
+    var con2 = window.document.form.txtclave2.value;
+    
+    if(nombre.length==0)
+    {
+        alert("El campo nombre esta vacion !!!!");
+        window.document.form.txtnombre.focus();
+        return;
+    }else if(apellidop.length==0)
+    {   alert("El campo apellido paterno esta vacion !!!!");
+        window.document.form.txtapellidoP.focus();
+        return;
+    }else if(apellidom.length==0)
+    {   alert("El campo apellido materno esta vacion !!!!");
+        window.document.form.txtapellidoM.focus();
+        return;
+    }else if(edad.length==0)
+    {   alert("El campo edad esta vacion !!!!");
+        window.document.form.txtedad.focus();
+        return;
+    }else if(sexo.length==0)
+    {   alert("El campo sexo esta vacion !!!!");
+        window.document.form.txtsexo.focus();
+        return;
+    }else if(telefono.length==0)
+    {   alert("El campo telefono esta vacion !!!!");
+        window.document.form.txttelefono.focus();
+        return;
+    }else if(correo.length==0)
+    {   alert("El campo correo electronico esta vacion !!!!");
+        window.document.form.txtcorreo.focus();
+        return;
+    }else if(usuario.length==0)
+    {   alert("El campo usuario esta vacion !!!!");
+        window.document.form.txtidusuario.focus();
+        return;
+    }else if(con.length==0)
+    {   alert("El campo contraseña esta vacion !!!!");
+        window.document.form.txtclave.focus();
+        return;
+    }else if(con2.length==0)
+    {   alert("El campo confirmar contraseña esta vacion !!!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else if(con2!=con){
+        alert("Las contraseñas no son iguales !!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else{
+    window.document.form.action="../../../Controlador/IndexControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="3";
+    window.document.form.nivel.value="2";
+    window.document.form.submit(); 
+    }
+}
+function ValidarAccesoA(){
+    var usuario = window.document.form.usuario.value;
+    var clave = window.document.form.clave.value;
+    
+    if(usuario.length==0)
+    {
+        alert("El campo Usuario esta vacion !!!!");
+        window.document.form.usuario.focus();
+        return;
+    }else if(clave.length==0)
+    {   alert("El campo Clave esta vacion !!!!");
+        window.document.form.clave.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/AdmControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="1";
+        window.document.form.opa.value="1";
+        window.document.form.nivel.value="1";
+        window.document.form.submit();
+    }
+}
+function CerrarSesionA(){
+    window.document.form.action="../../../Controlador/AdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="2";
+    window.document.form.submit();
+}
+function MenuAdministrador(ruta,suba){
+    window.document.form.action=ruta+"MenuAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value=suba;
+    window.document.form.submit();
+}
+function NuevoUsuario(){
+    window.document.form.action="../../../Controlador/MantUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="3";
+    window.document.form.nu.value="1";
+    window.document.form.submit();
+}
+function NuevoAdministrador(){
+    window.document.form.action="../../../Controlador/MantAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="9";
+    window.document.form.na.value="1";
+    window.document.form.submit();
+}
+function CrearUsuario(){
+    var nombre = window.document.form.txtnombre.value;
+    var apellidop = window.document.form.txtapellidoP.value;
+    var apellidom = window.document.form.txtapellidoM.value;
+    var edad = window.document.form.txtedad.value;
+    var sexo = window.document.form.txtsexo.value;
+    var telefono = window.document.form.txttelefono.value;
+    var correo = window.document.form.txtcorreo.value;
+    var usuario = window.document.form.txtidusuario.value;
+    var con = window.document.form.txtclave.value;
+    var con2 = window.document.form.txtclave2.value;
+    
+    if(nombre.length==0)
+    {
+        alert("El campo nombre esta vacion !!!!");
+        window.document.form.txtnombre.focus();
+        return;
+    }else if(apellidop.length==0)
+    {   alert("El campo apellido paterno esta vacion !!!!");
+        window.document.form.txtapellidoP.focus();
+        return;
+    }else if(apellidom.length==0)
+    {   alert("El campo apellido materno esta vacion !!!!");
+        window.document.form.txtapellidoM.focus();
+        return;
+    }else if(edad.length==0)
+    {   alert("El campo edad esta vacion !!!!");
+        window.document.form.txtedad.focus();
+        return;
+    }else if(sexo.length==0)
+    {   alert("El campo sexo esta vacion !!!!");
+        window.document.form.txtsexo.focus();
+        return;
+    }else if(telefono.length==0)
+    {   alert("El campo telefono esta vacion !!!!");
+        window.document.form.txttelefono.focus();
+        return;
+    }else if(correo.length==0)
+    {   alert("El campo correo electronico esta vacion !!!!");
+        window.document.form.txtcorreo.focus();
+        return;
+    }else if(usuario.length==0)
+    {   alert("El campo usuario esta vacion !!!!");
+        window.document.form.txtidusuario.focus();
+        return;
+    }else if(con.length==0)
+    {   alert("El campo contraseña esta vacion !!!!");
+        window.document.form.txtclave.focus();
+        return;
+    }else if(con2.length==0)
+    {   alert("El campo confirmar contraseña esta vacion !!!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else if(con2!=con){
+        alert("Las contraseñas no son iguales !!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/MantUsuControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="1";
+        window.document.form.opa.value="1";
+        window.document.form.suba.value="3";
+        window.document.form.nivel.value="2";
+        window.document.form.nu.value="2";
+        window.document.form.submit();
+    }
+}
+function CrearAdministrador(){
+    var nombre = window.document.form.txtnombre.value;
+    var apellidop = window.document.form.txtapellidoP.value;
+    var apellidom = window.document.form.txtapellidoM.value;
+    var edad = window.document.form.txtedad.value;
+    var sexo = window.document.form.txtsexo.value;
+    var telefono = window.document.form.txttelefono.value;
+    var correo = window.document.form.txtcorreo.value;
+    var usuario = window.document.form.txtidusuario.value;
+    var con = window.document.form.txtclave.value;
+    var con2 = window.document.form.txtclave2.value;
+    
+    if(nombre.length==0)
+    {
+        alert("El campo nombre esta vacion !!!!");
+        window.document.form.txtnombre.focus();
+        return;
+    }else if(apellidop.length==0)
+    {   alert("El campo apellido paterno esta vacion !!!!");
+        window.document.form.txtapellidoP.focus();
+        return;
+    }else if(apellidom.length==0)
+    {   alert("El campo apellido materno esta vacion !!!!");
+        window.document.form.txtapellidoM.focus();
+        return;
+    }else if(edad.length==0)
+    {   alert("El campo edad esta vacion !!!!");
+        window.document.form.txtedad.focus();
+        return;
+    }else if(sexo.length==0)
+    {   alert("El campo sexo esta vacion !!!!");
+        window.document.form.txtsexo.focus();
+        return;
+    }else if(telefono.length==0)
+    {   alert("El campo telefono esta vacion !!!!");
+        window.document.form.txttelefono.focus();
+        return;
+    }else if(correo.length==0)
+    {   alert("El campo correo electronico esta vacion !!!!");
+        window.document.form.txtcorreo.focus();
+        return;
+    }else if(usuario.length==0)
+    {   alert("El campo usuario esta vacion !!!!");
+        window.document.form.txtidusuario.focus();
+        return;
+    }else if(con.length==0)
+    {   alert("El campo contraseña esta vacion !!!!");
+        window.document.form.txtclave.focus();
+        return;
+    }else if(con2.length==0)
+    {   alert("El campo confirmar contraseña esta vacion !!!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else if(con2!=con){
+        alert("Las contraseñas no son iguales !!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/MantAdmControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="1";
+        window.document.form.opa.value="1";
+        window.document.form.suba.value="9";
+        window.document.form.nivel.value="1";
+        window.document.form.na.value="2";
+        window.document.form.submit();
+    }
+}
+function CrearNewAdministrador(){
+    var nombre = window.document.form.txtnombre.value;
+    var apellidop = window.document.form.txtapellidoP.value;
+    var apellidom = window.document.form.txtapellidoM.value;
+    var edad = window.document.form.txtedad.value;
+    var sexo = window.document.form.txtsexo.value;
+    var telefono = window.document.form.txttelefono.value;
+    var correo = window.document.form.txtcorreo.value;
+    var usuario = window.document.form.txtidusuario.value;
+    var con = window.document.form.txtclave.value;
+    var con2 = window.document.form.txtclave2.value;
+    
+    if(nombre.length==0)
+    {
+        alert("El campo nombre esta vacion !!!!");
+        window.document.form.txtnombre.focus();
+        return;
+    }else if(apellidop.length==0)
+    {   alert("El campo apellido paterno esta vacion !!!!");
+        window.document.form.txtapellidoP.focus();
+        return;
+    }else if(apellidom.length==0)
+    {   alert("El campo apellido materno esta vacion !!!!");
+        window.document.form.txtapellidoM.focus();
+        return;
+    }else if(edad.length==0)
+    {   alert("El campo edad esta vacion !!!!");
+        window.document.form.txtedad.focus();
+        return;
+    }else if(sexo.length==0)
+    {   alert("El campo sexo esta vacion !!!!");
+        window.document.form.txtsexo.focus();
+        return;
+    }else if(telefono.length==0)
+    {   alert("El campo telefono esta vacion !!!!");
+        window.document.form.txttelefono.focus();
+        return;
+    }else if(correo.length==0)
+    {   alert("El campo correo electronico esta vacion !!!!");
+        window.document.form.txtcorreo.focus();
+        return;
+    }else if(usuario.length==0)
+    {   alert("El campo usuario esta vacion !!!!");
+        window.document.form.txtidusuario.focus();
+        return;
+    }else if(con.length==0)
+    {   alert("El campo contraseña esta vacion !!!!");
+        window.document.form.txtclave.focus();
+        return;
+    }else if(con2.length==0)
+    {   alert("El campo confirmar contraseña esta vacion !!!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else if(con2!=con){
+        alert("Las contraseñas no son iguales !!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/CrearNuevoControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="1";
+        window.document.form.opa.value="1";
+        window.document.form.suba.value="6";
+        window.document.form.nivel.value="1";
+        window.document.form.np.value="1";
+        window.document.form.submit();
+    }
+}
+function CrearNewUsuario(){
+    var nombre = window.document.form.txtnombre.value;
+    var apellidop = window.document.form.txtapellidoP.value;
+    var apellidom = window.document.form.txtapellidoM.value;
+    var edad = window.document.form.txtedad.value;
+    var sexo = window.document.form.txtsexo.value;
+    var telefono = window.document.form.txttelefono.value;
+    var correo = window.document.form.txtcorreo.value;
+    var usuario = window.document.form.txtidusuario.value;
+    var con = window.document.form.txtclave.value;
+    var con2 = window.document.form.txtclave2.value;
+    
+    if(nombre.length==0)
+    {
+        alert("El campo nombre esta vacion !!!!");
+        window.document.form.txtnombre.focus();
+        return;
+    }else if(apellidop.length==0)
+    {   alert("El campo apellido paterno esta vacion !!!!");
+        window.document.form.txtapellidoP.focus();
+        return;
+    }else if(apellidom.length==0)
+    {   alert("El campo apellido materno esta vacion !!!!");
+        window.document.form.txtapellidoM.focus();
+        return;
+    }else if(edad.length==0)
+    {   alert("El campo edad esta vacion !!!!");
+        window.document.form.txtedad.focus();
+        return;
+    }else if(sexo.length==0)
+    {   alert("El campo sexo esta vacion !!!!");
+        window.document.form.txtsexo.focus();
+        return;
+    }else if(telefono.length==0)
+    {   alert("El campo telefono esta vacion !!!!");
+        window.document.form.txttelefono.focus();
+        return;
+    }else if(correo.length==0)
+    {   alert("El campo correo electronico esta vacion !!!!");
+        window.document.form.txtcorreo.focus();
+        return;
+    }else if(usuario.length==0)
+    {   alert("El campo usuario esta vacion !!!!");
+        window.document.form.txtidusuario.focus();
+        return;
+    }else if(con.length==0)
+    {   alert("El campo contraseña esta vacion !!!!");
+        window.document.form.txtclave.focus();
+        return;
+    }else if(con2.length==0)
+    {   alert("El campo confirmar contraseña esta vacion !!!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else if(con2!=con){
+        alert("Las contraseñas no son iguales !!!");
+        window.document.form.txtclave2.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/CrearNuevoControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="1";
+        window.document.form.opa.value="1";
+        window.document.form.suba.value="6";
+        window.document.form.nivel.value="2";
+        window.document.form.np.value="3";
+        window.document.form.submit();
+    }
+}
+function eliminarUsuario(codigo){
+    window.document.form.action="../../../Controlador/MantUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="3";
+    window.document.form.nu.value="3";
+    window.document.form.codigo.value=codigo;
+    window.document.form.submit();
+}
+function eliminarAdministador(codigo){
+    window.document.form.action="../../../Controlador/MantAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="9";
+    window.document.form.na.value="3";
+    window.document.form.codigo.value=codigo;
+    window.document.form.submit();
+}
+function editartbusuario(codigo){
+    window.document.form.action="../../../Controlador/MantUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="3";
+    window.document.form.nu.value="4";
+    window.document.form.codigo.value=codigo;
+    window.document.form.submit();
+}
+function editartbadministrador(codigo){
+    window.document.form.action="../../../Controlador/MantAdmControlador.php";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="9";
+    window.document.form.na.value="4";
+    window.document.form.codigo.value=codigo;
+    window.document.form.submit();
+}
+function editartbpregunta(codpre){
+    window.document.form.action="../../../Controlador/MantPreControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="2";
+    window.document.form.tp.value="1";
+    window.document.form.codpre.value=codpre;
+    window.document.form.submit();
+}
+function ActualizarUsuario(){
+    window.document.form.action="../../../Controlador/MantUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="3";
+    window.document.form.nu.value="5";
+    window.document.form.submit();
+}
+function ActualizarAdministrador(){
+    window.document.form.action="../../../Controlador/MantAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="9";
+    window.document.form.na.value="5";
+    window.document.form.submit();
+}
+function ActualizarPregunta(){
+    window.document.form.action="../../../Controlador/MantPreControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="2";
+    window.document.form.tp.value="2";
+    window.document.form.submit();
+}
+function RegresarUsuarios(){
+    window.document.form.action="../../../Controlador/MantUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="3";
+    window.document.form.nu.value="6";
+    window.document.form.submit();
+}
+function RegresarAdministrador(){
+    window.document.form.action="../../../Controlador/MantAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="9";
+    window.document.form.na.value="6";
+    window.document.form.submit();
+}
+function RegresarPreguntas(){
+    window.document.form.action="../../../Controlador/MantPreControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="2";
+    window.document.form.tp.value="3";
+    window.document.form.submit();
+}
+function CambioContAdm(){     
+    window.document.form.action="../../../Controlador/ConfAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="4";
+    window.document.form.confi.value="1";
+    window.document.form.submit(); 
+}
+function GuardarCambAdm(){
+    window.document.form.action="../../../Controlador/ConfAdmControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="4";
+    window.document.form.confi.value="2";
+    window.document.form.submit(); 
+}
+function VerTest(codigo){
+    window.document.form.action="../../../Controlador/RepTestControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="1";
+    window.document.form.opa.value="1";
+    window.document.form.suba.value="8";
+    window.document.form.re.value="1";
+    window.document.form.codi.value=codigo;
+    window.document.form.submit();
+}
+/******************************ADMINISTRADOR***********************************/
+
+/*********************************USUARIO**************************************/
+
+function entrarU(){
+    window.document.form.action="./Controlador/IndexControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
+    window.document.form.submit(); 
+}
+function ValidarAccesoU(){
+    var usuario = window.document.form.usuario.value;
+    var clave = window.document.form.clave.value;
+    
+    if(usuario.length==0)
+    {
+        alert("El campo Usuario esta vacion !!!!");
+        window.document.form.usuario.focus();
+        return;
+    }else if(clave.length==0)
+    {   alert("El campo Clave esta vacion !!!!");
+        window.document.form.clave.focus();
+        return;
+    }else{
+        window.document.form.action="../../../Controlador/UsuControlador.java";
+        window.document.form.method="POST";
+        window.document.form.op.value="2";
+        window.document.form.opu.value="1";
+        window.document.form.nivel.value="2";
+        window.document.form.submit();
+    }
+}
+function CerrarSesionU(){
+    window.document.form.action="../../../Controlador/UsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
+    window.document.form.opu.value="2";
+    window.document.form.submit();
+}
+function MenuUsuario(ruta,subu){
+    window.document.form.action=ruta+"MenuUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
+    window.document.form.opu.value="1";
+    window.document.form.subu.value=subu;
+    window.document.form.submit();
+}
+function ComenzarTest(){
+    window.document.form.action="../../../Controlador/MenuUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
     window.document.form.opu.value="1";
     window.document.form.subu.value="4";
     window.document.form.submit();
 }
-
-function enviar(ruta) {
-    var usu = document.form.txtUsuario.value;
-    var clave = document.form.txtClave.value;
-    if (usu.length == 0) {
-        alert('Ingrese usuario, gracias');
-        document.form.txtUsuario.focus();
-        return;
-    } else {
-        if (clave.length == 0) {
-
-            alert('Ingrese clave, gracias');
-            document.form.txtClave.focus();
-            return;
-        } else {
-            document.form.action = ruta + "/UsuarioControlador";
-            document.form.method = "POST";
-            document.form.op.value = "1";
-            document.form.submit();
-        }
-    }
+function CambioContUsu(){     
+    window.document.form.action="../../../Controlador/ConfUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
+    window.document.form.opu.value="1";
+    window.document.form.subu.value="7";
+    window.document.form.conf.value="1";
+    window.document.form.submit(); 
 }
-
-/*
-function crear(ruta) {
-    var ape = document.form.txtApe.value;
-    var nombre = document.form.txtNom.value;
-    var usuario = document.form.txtCor.value;
-    var clave = document.form.txtClave.value;
-    if (ape.length == 0) {
-        alert('Ingrese Apellido, gracias');
-        document.form.ape.focus();
-        return;
-    } else {
-        if (nombre.length == 0) {
-
-            alert('Ingrese nombre, gracias');
-            document.form.nombre.focus();
-            return;
-
-        }
-        if (usuario.lengh == 0) {
-            alert('Ingrese usuarui, gracias');
-            document.form.usuario.focus();
-            return;
-        }
-        if (clave.length == 0) {
-            alert('Ingrese clave, gracias');
-            document.form.clave.focus();
-            return;
-        } else {
-            document.form.action = ruta + "/UsuarioControlador";
-            document.form.method = "POST";
-            document.form.op.value = "1";
-            document.form.submit();
-        }
-    }
-}*/
-
-
-function cargar() {
-    document.form.txtUsuario.focus();
+function GuardarCambUsu(){
+    window.document.form.action="../../../Controlador/ConfUsuControlador.java";
+    window.document.form.method="POST";
+    window.document.form.op.value="2";
+    window.document.form.opu.value="1";
+    window.document.form.subu.value="7";
+    window.document.form.conf.value="2";
+    window.document.form.submit(); 
 }
-
-function nuevo(ruta) {
-
-    document.form.action = ruta + "/EmpleadoControlador";
-    document.form.method = "POST";
-    document.form.op.value = "1";
-    document.form.submit();
-
-
-}
-
-function cargarBotones(op) {
-    if (navigator.appVersion.substring(0, 1) >= 3) {
-        switch (op) {
-            case 1: {
-                bot0 = new Image();
-                bot0.src = "../../imagenes/Nuevo.gif";
-                bot0p = new Image();
-                bot0p.src = "../../imagenes/NuevoOn.gif";
-
-                bot1 = new Image();
-                bot1.src = "../../imagenes/Modificar.gif";
-                bot1p = new Image();
-                bot1p.src = "../../imagenes/ModificarOn.gif";
-
-                bot2 = new Image();
-                bot2.src = "../../imagenes/Eliminar.gif";
-                bot2p = new Image();
-                bot2p.src = "../../imagenes/EliminarOn.gif";
-
-                bot3 = new Image();
-                bot3.src = "../../imagenes/visualizar.gif";
-                bot3p = new Image();
-                bot3p.src = "../../imagenes/visualizarOn.gif";
-                break;
-            }
-            case 2: {
-                bot0 = new Image();
-                bot0.src = "../../imagenes/Aceptar.gif";
-                bot0p = new Image();
-                bot0p.src = "../../imagenes/AceptarOn.gif";
-
-                bot1 = new Image();
-                bot1.src = "../../imagenes/Salir.gif";
-                bot1p = new Image();
-                bot1p.src = "../../imagenes/SalirOn.gif";
-                break;
-            }
-        }
-    }
-}
-
-
-function CambiaImg(imgid, imgnew) {
-    if (navigator.appVersion.substring(0, 1) >= 3) {
-        document.images[imgid].src = eval(imgnew + ".src");
-    }
-}
-
-function pulsar(e, obj) {
-    tecla = (document.all) ? e.keyCode : e.which;
-    if (tecla == 13)
-        enviar();
-}
-
-
-function nuevo() {
-    document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-    document.form.method = "GET";
-    document.form.accion.value = "NUEVO";
-    document.form.submit();
-}
-
-function eliminar() {
-
-    var numeroRegistros, i, aux = 0;
-    numeroRegistros = document.form.elegir.length;
-
-    for (i = 0; i < numeroRegistros; i++) {
-        if (document.form.elegir[i].checked) {
-            aux++;
-        }
-    }
-    if (aux == 0) {
-        alert("No has Eligido ningun registro,por favor Elija");
-    } else {
-        document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-        document.form.method = "GET";
-        document.form.accion.value = "ELIMINAR";
-        document.form.submit();
-
-
-    }
-
-}
-
-function actualizar() {
-    var numeroRegistros, i, aux = 0;
-    numeroRegistros = document.form.elegir.length;
-
-    for (i = 0; i < numeroRegistros; i++) {
-        if (document.form.elegir[i].checked) {
-            aux++;
-        }
-    }
-    if (aux == 0) {
-        alert("No has Eligido ningun registro,por favor Elija  un solo Registro");
-        return;
-    }
-    if (aux > 1) {
-        alert("Elija por favor un solo Registro");
-        limpiarCheckbox();
-    } else {
-        document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-        document.form.method = "GET";
-        document.form.accion.value = "MODIFICAR";
-        document.form.submit();
-    }
-}
-
-function visualizar() {
-
-    document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-    document.form.method = "GET";
-    document.form.accion.value = "VISUALIZAR";
-    document.form.submit();
-
-
-}
-
-function limpiarCheckbox() {
-    var numeroRegistros, i;
-    numeroRegistros = document.form.elegir.length;
-    for (i = 0; i < numeroRegistros; i++) {
-        document.form.elegir[i].checked = 0;
-    }
-}
-
-
-function nuevo() {
-    document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-    document.form.method = "GET";
-    document.form.accion.value = "NUEVO";
-    document.form.submit();
-}
-
-function eliminar() {
-
-    var numeroRegistros, i, aux = 0;
-    numeroRegistros = document.form.elegir.length;
-
-    for (i = 0; i < numeroRegistros; i++) {
-        if (document.form.elegir[i].checked) {
-            aux++;
-        }
-    }
-    if (aux == 0) {
-        alert("No has Eligido ningun registro,por favor Elija");
-    } else {
-        document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-        document.form.method = "GET";
-        document.form.accion.value = "ELIMINAR";
-        document.form.submit();
-
-
-    }
-
-}
-
-function actualizar() {
-    var numeroRegistros, i, aux = 0;
-    numeroRegistros = document.form.elegir.length;
-
-    for (i = 0; i < numeroRegistros; i++) {
-        if (document.form.elegir[i].checked) {
-            aux++;
-        }
-    }
-    if (aux == 0) {
-        alert("No has Eligido ningun registro,por favor Elija  un solo Registro");
-        return;
-    }
-    if (aux > 1) {
-        alert("Elija por favor un solo Registro");
-        limpiarCheckbox();
-    } else {
-        document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-        document.form.method = "GET";
-        document.form.accion.value = "MODIFICAR";
-        document.form.submit();
-    }
-}
-
-function visualizar() {
-
-    document.form.action = "<%=request.getContextPath()%>/EmpleadoServlet";
-    document.form.method = "GET";
-    document.form.accion.value = "VISUALIZAR";
-    document.form.submit();
-
-
-}
-
-function limpiarCheckbox() {
-    var numeroRegistros, i;
-    numeroRegistros = document.form.elegir.length;
-    for (i = 0; i < numeroRegistros; i++) {
-        document.form.elegir[i].checked = 0;
-    }
-}
-           
-        
-                
-        
