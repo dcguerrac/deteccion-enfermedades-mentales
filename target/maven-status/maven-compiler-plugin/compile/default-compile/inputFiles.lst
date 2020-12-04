@@ -2,6 +2,7 @@ C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\ja
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\ResultadoDao.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\PreguntaControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\IndexControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\ConfAdmControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PersonaDao.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\EmpleadoControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PreguntaDao.java
@@ -9,6 +10,7 @@ C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\ja
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\RespuestaDao.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\PuntajeBean.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PuntajeDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuAdmControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuUsuControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\EstadoCivilControlador.java
@@ -17,4 +19,5 @@ C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\ja
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Util\ConexionBD.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\RespuestaBean.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\PreguntaBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\AdmControlador.java
 C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\PersonaControlador.java

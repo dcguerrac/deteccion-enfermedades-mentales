@@ -77,7 +77,7 @@ die();
                 </div>
             </div>
         </div>
-        <?php include './PiePagina.php';      ?>
+        <%@ include file="/Vista/Principal/PiePagina.jsp" %>
     </div>
 </form>
 </body>

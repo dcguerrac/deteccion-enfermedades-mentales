@@ -1,6 +1,5 @@
 package Dao;
 
-import Bean.PersonaBean;
 import Bean.PreguntaBean;
 import Util.ConexionBD;
 

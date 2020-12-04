@@ -1,9 +1,9 @@
 Controlador\EstadoCivilControlador.class
 Bean\PreguntaBean.class
-Controlador\EmpleadoControlador.class
 Util\ConexionBD.class
+Controlador\MenuControlador.class
+Controlador\EmpleadoControlador.class
 Controlador\SexoControlador.class
 Dao\PreguntaDao.class
 Bean\PersonaBean.class
 Controlador\PreguntaControlador.class
-Controlador\MenuControlador.class

@@ -70,9 +70,10 @@ public class MenuUsuControlador extends HttpServlet {
                                 break;
                             }
                             case 7: {
-                                String nombre = request.getParameter("usu");
+                                String nombre = request.getParameter("usuario");
+                                System.out.println("Nombre es " +nombre);
                                 PersonaBean personaBean = new PersonaBean();
-                                personaBean.setNomPer(nombre);
+                                personaBean.setUsuPer(nombre);
                                 PersonaDao personaDao = new PersonaDao();
                                 List<PersonaBean> lista = personaDao.ConfUsuario(personaBean);
                                 request.setAttribute("'confusu'", lista);

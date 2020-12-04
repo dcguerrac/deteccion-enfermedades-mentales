@@ -35,7 +35,7 @@
     <input type="hidden" name="opu">
     <input type="hidden" name="subu">
     <div id="estructura">
-        <%@ include file="/Vista/Principal/menu.jsp" %>
+        <%@ include file="/Vista/Usuario/Principal/Menu.jsp" %>
         <div id="contenido" style="height:auto;width: 100%;background: #fff">
             <div class="container">
                 <div class="card mt-2 mb-3">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <?php include '../Principal/PiePagina.php';      ?>
+        <%@ include file="/Vista/Principal/PiePagina.jsp" %>
     </div>
 </form>
 </body>

@@ -44,7 +44,7 @@ public class UsuControlador extends HttpServlet {
                             pagina = "/Vista/Usuario/Principal/FrmInicioUsu.jsp";
                         } else {
                             String mensaje = "Usuario y clave Incorrecto !!!!!";
-                            pagina = "/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp?mensaje=" + mensaje+"";
+                            pagina = "/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp?mensaje=" + mensaje + "";
                         }
                         break;
                     }

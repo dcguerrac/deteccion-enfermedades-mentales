@@ -1,74 +1,70 @@
 
 package Controlador;
 
-import java.io.IOException;
+import Bean.PersonaBean;
+import Dao.PersonaDao;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import Bean.PersonaBean;
-import Dao.PersonaDao;
+import java.io.IOException;
 
 public class IndexControlador extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
-        String   op1=request.getParameter("op");       
-        int  op=Integer.parseInt(op1);
-        String pagina="";        
 
-switch (op)
-{
-    case 1:
-    {
-        pagina="/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
-        break;
-    }
-    case 2:
-    {
-        pagina="/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp";
-        break;
-    }
-    case 3:
-    {
-        String apellidop = request.getParameter("txtapellidoP");
-        String apellidom = request.getParameter("txtapellidoM");
-        String nombre = request.getParameter("txtnombre");
-        String nivel=request.getParameter("nivel");
-        String edad=request.getParameter("txtedad");
-        String sexo= request.getParameter("txtsexo");
-        String telefono=request.getParameter("txttelefono");
-        String correo=request.getParameter("txtcorreo");
-        String usuario=request.getParameter("txtidusuario");
-        String contraseña=request.getParameter("txtclave");
+        String op1 = request.getParameter("op");
+        int op = Integer.parseInt(op1);
+        String pagina = "";
 
-        PersonaBean objPersonaBean  =new PersonaBean();
-        
-        objPersonaBean=setAppPer("apellidop");
-        objPersonaBean=setApmPer("apellidom");
-        objPersonaBean=setNomPer("nombre");
-        objPersonaBean=setNivPer("nivel");
-        objPersonaBean=setEdaPer("edad");
-        objPersonaBean=setSexPer("sexo");
-        objPersonaBean=setTelPer("telefono");
-        objPersonaBean=setCorPer("correo");
-        objPersonaBean=setUsuPer("usuario");
-        objPersonaBean=setPasPer("contraseña");
-        
-        PersonaDao objPersonaDAO =new PersonaDAO();
-        
-        objPersonaDAO=InsertarPersonas(objPersonaBean);
-        
-       String mensaje="Usuario creado exitosamente !!!!!";
-        pagina="/Vista/Usuario/Seguridad/FrmCrearCuenta.jsp?mensaje=" + mensaje;
-        break;
+        switch (op) {
+            case 1: {
+                pagina = "/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
+                break;
+            }
+            case 2: {
+                pagina = "/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp";
+                break;
+            }
+            case 3: {
+                String apellidop = request.getParameter("txtapellidoP");
+                String apellidom = request.getParameter("txtapellidoM");
+                String nombre = request.getParameter("txtnombre");
+                String nivel = request.getParameter("nivel");
+                String edad = request.getParameter("txtedad");
+                String sexo = request.getParameter("txtsexo");
+                String telefono = request.getParameter("txttelefono");
+                String correo = request.getParameter("txtcorreo");
+                String usuario = request.getParameter("txtidusuario");
+                String contraseña = request.getParameter("txtclave");
+
+                PersonaBean objPersonaBean = new PersonaBean();
+
+                objPersonaBean = setAppPer("apellidop");
+                objPersonaBean = setApmPer("apellidom");
+                objPersonaBean = setNomPer("nombre");
+                objPersonaBean = setNivPer("nivel");
+                objPersonaBean = setEdaPer("edad");
+                objPersonaBean = setSexPer("sexo");
+                objPersonaBean = setTelPer("telefono");
+                objPersonaBean = setCorPer("correo");
+                objPersonaBean = setUsuPer("usuario");
+                objPersonaBean = setPasPer("contraseña");
+
+                PersonaDao objPersonaDAO = new PersonaDAO();
+
+                objPersonaDAO = InsertarPersonas(objPersonaBean);
+
+                String mensaje = "Usuario creado exitosamente !!!!!";
+                pagina = "/Vista/Usuario/Seguridad/FrmCrearCuenta.jsp?mensaje=" + mensaje;
+                break;
+            }
+
         }
-
-    }
         getServletContext().getRequestDispatcher(pagina).forward(request, response);
-}
+    }
 // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
 
     /**

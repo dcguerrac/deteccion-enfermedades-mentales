@@ -6,11 +6,47 @@ package Bean;/*
 public class PersonaBean {
     private int CodPer;
     private String AppPer;
+    private String ApmPer;
     private String NomPer;
-    private String CorPer;
-    private String PasPer;
-    private String UsuPer;
     private String NivPer;
+    private String EdaPer;
+    private String SexPer;
+    private String TelPer;
+    private String CorPer;
+    private String UsuPer;
+    private String PasPer;
+
+    public String getApmPer() {
+        return ApmPer;
+    }
+
+    public void setApmPer(String apmPer) {
+        ApmPer = apmPer;
+    }
+
+    public String getEdaPer() {
+        return EdaPer;
+    }
+
+    public void setEdaPer(String edaPer) {
+        EdaPer = edaPer;
+    }
+
+    public String getSexPer() {
+        return SexPer;
+    }
+
+    public void setSexPer(String sexPer) {
+        SexPer = sexPer;
+    }
+
+    public String getTelPer() {
+        return TelPer;
+    }
+
+    public void setTelPer(String telPer) {
+        TelPer = telPer;
+    }
 
     public String getNivPer() {
         return NivPer;

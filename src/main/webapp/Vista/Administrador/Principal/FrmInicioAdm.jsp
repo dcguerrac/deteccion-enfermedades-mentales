@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 
 <html>
@@ -12,8 +13,8 @@
     <body>
         <form name="form">
             <input type="hidden" name="op">
-            <input type="hidden" name="opa">
-            <input type="hidden" name="suba">
+            <input type="hidden" name="opu">
+            <input type="hidden" name="subu">
             <div id="estructura">  
                 <%@ include file="Menu.jsp"  %>
                 <div id="contenido" style="width: 100%; height: 420px">

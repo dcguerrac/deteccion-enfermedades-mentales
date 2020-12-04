@@ -6,6 +6,10 @@
         <servlet-class>Controlador.UsuControlador</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>MenuAdmControlador</servlet-name>
+        <servlet-class>Controlador.MenuAdmControlador</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>AdmControlador</servlet-name>
         <servlet-class>Controlador.AdmControlador</servlet-class>
     </servlet>
@@ -44,6 +48,10 @@
     <servlet-mapping>
         <servlet-name>MenuControlador</servlet-name>
         <url-pattern>/MenuControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MenuAdmControlador</servlet-name>
+        <url-pattern>/MenuAdmControlador</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>IndexControlador</servlet-name>

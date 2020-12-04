@@ -1,5 +1,10 @@
 package Bean;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class RespuestaBean {
 
     private String CodResp;
@@ -7,35 +12,4 @@ public class RespuestaBean {
     private String CodPun;
     private int CodRes;
 
-    public String getCodResp() {
-        return CodResp;
-    }
-
-    public void setCodResp(String codResp) {
-        CodResp = codResp;
-    }
-
-    public String getCodPre() {
-        return CodPre;
-    }
-
-    public void setCodPre(String codPre) {
-        CodPre = codPre;
-    }
-
-    public String getCodPun() {
-        return CodPun;
-    }
-
-    public void setCodPun(String codPun) {
-        CodPun = codPun;
-    }
-
-    public int getCodRes() {
-        return CodRes;
-    }
-
-    public void setCodRes(int codRes) {
-        CodRes = codRes;
-    }
 }

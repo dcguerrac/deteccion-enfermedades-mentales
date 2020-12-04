@@ -19,8 +19,8 @@
     <body>
         <form name="form">
             <input type="hidden" name="op">
-            <input type="hidden" name="opa">
-            <input type="hidden" name="suba">
+            <input type="hidden" name="opu">
+            <input type="hidden" name="subu">
             <input type="hidden" name="re">
             <input type="hidden" name="codi">
             <div id="estructura">  

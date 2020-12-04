@@ -23,38 +23,39 @@ public class AdmControlador extends HttpServlet {
         int opu = Integer.parseInt(op2);
         String pagina = "";
 
-
         switch (op) {
-            case 2: {
+            case 1: {
                 switch (opu) {
                     case 1: {
 
-                        String user = request.getParameter("usuario");
-                        String password = request.getParameter("clave");
-                        String level = request.getParameter("nivel");
-                        PersonaBean PersonaBean = new PersonaBean();
-                        PersonaBean.setUsuPer(user);
-                        PersonaBean.setPasPer(password);
-                        PersonaBean.setNivPer(level);
+                        String usuario = request.getParameter("usuario");
+                        String clave = request.getParameter("clave");
+                        String nivel = request.getParameter("nivel");
 
-                        PersonaDao personaDao = new PersonaDao();
-                        PersonaBean responseObtenerPersona = personaDao.ObtenerPersona(PersonaBean);
-                        if (responseObtenerPersona != null) {
-                            request.setAttribute("responseObtenerPersona", responseObtenerPersona);
-                            pagina = "/Vista/Usuario/Principal/FrmInicioUsu.jsp";
+                        PersonaBean objPersonaBean = new PersonaBean();
+                        objPersonaBean.setUsuPer(usuario);
+                        objPersonaBean.setPasPer(clave);
+                        objPersonaBean.setNivPer(nivel);
+
+                        PersonaDao objPersonaDAO = new PersonaDao();
+
+                        PersonaBean PersonaBeanResponse = objPersonaDAO.ObtenerPersona(objPersonaBean);
+                        if (PersonaBeanResponse != null) {
+                            request.setAttribute("admin", PersonaBeanResponse);
+                            pagina = "/Vista/Administrador/Principal/FrmInicioAdm.jsp";
                         } else {
                             String mensaje = "Usuario y clave Incorrecto !!!!!";
-                            pagina = "/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp?mensaje=" + mensaje+"";
+                            pagina = "/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp?mensaje=" + mensaje;
                         }
                         break;
                     }
                     case 2: {
-                        String usuario = request.getParameter("usu");
+                        String usuario = request.getParameter("admin");
                         if (usuario == null || usuario == "") {
-                            response.sendRedirect("/Vista/Usuario/Seguridad/FrmLoginUsuario.php");
+                            pagina = "/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
                         }
                         destroy();
-                        response.sendRedirect("/Vista/Usuario/Seguridad/FrmLoginUsuario.php");
+                        pagina ="/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
                         break;
                     }
                 }
