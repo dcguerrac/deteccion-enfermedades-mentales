@@ -2,9 +2,9 @@
 
 /******************************ADMINISTRADOR***********************************/
 
-function entrarA(){
-    window.document.form.action="../../../Controlador/IndexControlador.java";
-    window.document.form.method="POST";
+function entrarA(ruta){
+    window.document.form.action=ruta + "/IndexControlador";
+    window.document.form.method="GET";
     window.document.form.op.value="1";
     window.document.form.submit(); 
 }
@@ -73,7 +73,7 @@ function CrearCuenta(){
     window.document.form.submit(); 
     }
 }
-function ValidarAccesoA(){
+function ValidarAccesoA(ruta){
     var usuario = window.document.form.usuario.value;
     var clave = window.document.form.clave.value;
     
@@ -87,7 +87,7 @@ function ValidarAccesoA(){
         window.document.form.clave.focus();
         return;
     }else{
-        window.document.form.action="../../../Controlador/AdmControlador.java";
+        window.document.form.action=ruta + "/AdmControlador";
         window.document.form.method="POST";
         window.document.form.op.value="1";
         window.document.form.opa.value="1";
@@ -496,6 +496,7 @@ function RegresarAdministrador(){
     window.document.form.submit();
 }
 function RegresarPreguntas(){
+    
     window.document.form.action="../../../Controlador/MantPreControlador.java";
     window.document.form.method="POST";
     window.document.form.op.value="1";
@@ -536,13 +537,13 @@ function VerTest(codigo){
 
 /*********************************USUARIO**************************************/
 
-function entrarU(){
-    window.document.form.action="./Controlador/IndexControlador.java";
+function entrarU(ruta){
+    window.document.form.action=ruta + "/IndexControlador";
     window.document.form.method="POST";
     window.document.form.op.value="2";
     window.document.form.submit(); 
 }
-function ValidarAccesoU(){
+function ValidarAccesoU(ruta){
     var usuario = window.document.form.usuario.value;
     var clave = window.document.form.clave.value;
     
@@ -556,7 +557,7 @@ function ValidarAccesoU(){
         window.document.form.clave.focus();
         return;
     }else{
-        window.document.form.action="../../../Controlador/UsuControlador.java";
+        window.document.form.action=ruta+"/UsuControlador";
         window.document.form.method="POST";
         window.document.form.op.value="2";
         window.document.form.opu.value="1";
@@ -572,15 +573,15 @@ function CerrarSesionU(){
     window.document.form.submit();
 }
 function MenuUsuario(ruta,subu){
-    window.document.form.action=ruta+"MenuUsuControlador.java";
+    window.document.form.action=ruta+"/MenuUsuControlador";
     window.document.form.method="POST";
     window.document.form.op.value="2";
     window.document.form.opu.value="1";
     window.document.form.subu.value=subu;
     window.document.form.submit();
 }
-function ComenzarTest(){
-    window.document.form.action="../../../Controlador/MenuUsuControlador.java";
+function ComenzarTest(ruta){
+    window.document.form.action=ruta+ "/MenuUsuControlador";
     window.document.form.method="POST";
     window.document.form.op.value="2";
     window.document.form.opu.value="1";

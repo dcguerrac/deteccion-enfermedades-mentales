@@ -23,12 +23,12 @@ switch (op)
 {
     case 1:
     {
-        pagina="../Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
+        pagina="/Vista/Administrador/Seguridad/FrmLoginAdministrador.jsp";
         break;
     }
     case 2:
     {
-        pagina="../Vista/Usuario/Seguridad/FrmLoginUsuario.jsp";
+        pagina="/Vista/Usuario/Seguridad/FrmLoginUsuario.jsp";
         break;
     }
     case 3:

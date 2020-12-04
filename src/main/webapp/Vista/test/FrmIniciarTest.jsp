@@ -23,13 +23,13 @@
     <input type="hidden" name="opu">
     <input type="hidden" name="subu">
     <div id="estructura">
-        <%@include file="menu.jsp" %>
+        <%@include file="/Vista/Usuario/Principal/Menu.jsp" %>
         <div id="contenido" style="height: 700px;width: 100%">
             <div class="container">
                 <div class="card mt-2 mb-3">
                     <div class="card-body">
                         <% for (PreguntaBean obj1 : lista) { %>
-                        <input type="hidden" name="preguntascod[]" value="<?php echo $pregunta['CodPre']; ?>"/>
+                        <input type="hidden" name="preguntascod[]" value="<% System.out.println(obj1.getCodPre()); %>"/>
                         <div class="pregunta mb-3">
                             <h5><% System.out.println(obj1.getOrdPre()); %>.  <%
                                 System.out.println(obj1.getDesPre()); %></h5>

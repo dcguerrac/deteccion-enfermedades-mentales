@@ -20,15 +20,15 @@
                                 <h3>Administrador</h3>
                                 <img src="<%=request.getContextPath()%>/imagenes/administrador.png" width="200" height="200">
                                 <br>
-                                <input type="submit" value="Iniciar Sesion" onclick="entrarA()">
+                                <a  href="javascript:entrarA('<%=request.getContextPath()%>')">Iniciar Sesion</a>
                             </center>
                         </td>
                         <td style="background-color: activeborder">
                             <center>
                                 <h3>Usuario</h3>
                                 <img src="<%=request.getContextPath()%>/imagenes/usuario.png" width="200" height="200">
-                                <br>          
-                                <input type="submit" value="Iniciar Sesion" onclick="entrarU()">
+                                <br>
+                                <a  href="javascript:entrarU('<%=request.getContextPath()%>')">Iniciar Sesion</a>
                             </center>
                         </td>
                     </tr>         

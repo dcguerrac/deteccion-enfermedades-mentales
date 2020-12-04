@@ -1,9 +1,20 @@
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\EstadoCivilControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\PersonaControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Dao\PersonaDao.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Bean\PersonaBean.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\UsuarioControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\SexoControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Controlador\EmpleadoControlador.java
-C:\Users\PC\Desktop\Proyecto LPO Web\deteccion-enfermedades-mentales\src\main\java\Util\ConexionBD.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\SexoControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\ResultadoDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\PreguntaControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\IndexControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PersonaDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\EmpleadoControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PreguntaDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\ResultadoBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\RespuestaDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\PuntajeBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Dao\PuntajeDao.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuUsuControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\MenuControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\EstadoCivilControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\PersonaBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\UsuControlador.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Util\ConexionBD.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\RespuestaBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Bean\PreguntaBean.java
+C:\Users\dguerrac\Documents\unfv\web\deteccion-enfermedades-mentales\src\main\java\Controlador\PersonaControlador.java

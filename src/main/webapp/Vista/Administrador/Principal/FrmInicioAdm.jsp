@@ -15,7 +15,7 @@
             <input type="hidden" name="opa">
             <input type="hidden" name="suba">
             <div id="estructura">  
-                <%@ include file="/Menu.jsp"  %>
+                <%@ include file="Menu.jsp"  %>
                 <div id="contenido" style="width: 100%; height: 420px">
                     <div id="div">
                         <div id="titulo">

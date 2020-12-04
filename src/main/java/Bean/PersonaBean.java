@@ -9,6 +9,24 @@ public class PersonaBean {
     private String NomPer;
     private String CorPer;
     private String PasPer;
+    private String UsuPer;
+    private String NivPer;
+
+    public String getNivPer() {
+        return NivPer;
+    }
+
+    public void setNivPer(String nivPer) {
+        NivPer = nivPer;
+    }
+
+    public String getUsuPer() {
+        return UsuPer;
+    }
+
+    public void setUsuPer(String usuPer) {
+        UsuPer = usuPer;
+    }
 
     public int getCodPer() {
         return CodPer;

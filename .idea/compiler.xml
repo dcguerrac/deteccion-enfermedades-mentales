@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DETECCION_TRANSTORNOS_MENTALES" target="1.7" />
+      <module name="DETECCION_TRANSTORNOS_MENTALES" target="8" />
       <module name="pregunta1jsp" target="1.6" />
       <module name="PROYECTOCONEXIONBDJAVAWEBELIMINAR" target="1.7" />
     </bytecodeTargetLevel>

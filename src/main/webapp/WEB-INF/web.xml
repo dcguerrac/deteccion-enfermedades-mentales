@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>UsuarioControlador</servlet-name>
-        <servlet-class>Controlador.UsuarioControlador</servlet-class>
+        <servlet-name>UsuControlador</servlet-name>
+        <servlet-class>Controlador.UsuControlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MenuUsuControlador</servlet-name>
+        <servlet-class>Controlador.MenuUsuControlador</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>MenuControlador</servlet-name>
         <servlet-class>Controlador.MenuControlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IndexControlador</servlet-name>
+        <servlet-class>Controlador.IndexControlador</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EmpleadoControlador</servlet-name>
@@ -21,12 +30,16 @@
         <servlet-class>Controlador.EstadoCivilControlador</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>UsuarioControlador</servlet-name>
-        <url-pattern>/UsuarioControlador</url-pattern>
+        <servlet-name>UsuControlador</servlet-name>
+        <url-pattern>/UsuControlador</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>MenuControlador</servlet-name>
         <url-pattern>/MenuControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndexControlador</servlet-name>
+        <url-pattern>/IndexControlador</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EmpleadoControlador</servlet-name>
@@ -39,6 +52,10 @@
     <servlet-mapping>
         <servlet-name>EstadoCivilControlador</servlet-name>
         <url-pattern>/EstadoCivilControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MenuUsuControlador</servlet-name>
+        <url-pattern>/MenuUsuControlador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
