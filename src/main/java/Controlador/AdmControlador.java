@@ -16,7 +16,7 @@ public class AdmControlador extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
-
+//XD
         String op1 = request.getParameter("op");
         String op2 = request.getParameter("opu");
         int op = Integer.parseInt(op1);
