@@ -6,6 +6,14 @@
         <servlet-class>Controlador.UsuControlador</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AdmControlador</servlet-name>
+        <servlet-class>Controlador.AdmControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdmControlador</servlet-name>
+        <url-pattern>/AdmControlador</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>MenuUsuControlador</servlet-name>
         <servlet-class>Controlador.MenuUsuControlador</servlet-class>
     </servlet>

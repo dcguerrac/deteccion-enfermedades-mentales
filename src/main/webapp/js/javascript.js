@@ -4,7 +4,7 @@
 
 function entrarA(ruta){
     window.document.form.action=ruta + "/IndexControlador";
-    window.document.form.method="GET";
+    window.document.form.method="POST";
     window.document.form.op.value="1";
     window.document.form.submit(); 
 }
@@ -90,7 +90,7 @@ function ValidarAccesoA(ruta){
         window.document.form.action=ruta + "/AdmControlador";
         window.document.form.method="POST";
         window.document.form.op.value="1";
-        window.document.form.opa.value="1";
+        window.document.form.opu.value="1";
         window.document.form.nivel.value="1";
         window.document.form.submit();
     }

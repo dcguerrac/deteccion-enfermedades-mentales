@@ -14,7 +14,7 @@
     <h1>Administrador</h1>
     <form name="form" action="" methot="post">
         <input type="hidden" name="op">
-        <input type="hidden" name="opa">
+        <input type="hidden" name="opu">
         <input type="hidden" name="nivel">
         <!-- USERNAME INPUT -->
         <label for="username">ID Usuario</label>
